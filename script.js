@@ -40,7 +40,7 @@ burger.addEventListener('click', () => {
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-document.querySelectorAll('.nav-link').forEach(link => {
+document.querySelectorAll('.nav-link, .nav-mobile-cta a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     burger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = '1'; });
